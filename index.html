@@ -75,9 +75,9 @@
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<ol style="list-style-type: decimal">
-<li>Create an authentication configuration</li>
-</ol>
+<div class="section level3">
+<h3 id="id_1-create-an-authentication-configuration">1. Create an authentication configuration<a class="anchor" aria-label="anchor" href="#id_1-create-an-authentication-configuration"></a>
+</h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">taplock</span><span class="op">)</span></span>
 <span></span>
@@ -90,9 +90,10 @@
 <span>  <span class="co"># This should be the URL of your application</span></span>
 <span>  app_url <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"APP_URL"</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<ol start="2" style="list-style-type: decimal">
-<li>Secure your Shiny application</li>
-</ol>
+</div>
+<div class="section level3">
+<h3 id="id_2-secure-your-shiny-application">2. Secure your Shiny application<a class="anchor" aria-label="anchor" href="#id_2-secure-your-shiny-application"></a>
+</h3>
 <p>To secure your Shiny Application you will simply need to expose an <code>sso_shiny_app</code> instead of a regular <code>shinyApp</code> at the end of your <code>app.R</code> file.</p>
 <p>Here is an example of a Shiny application that uses tapLock to secure itself:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
@@ -128,6 +129,7 @@
 <span><span class="op">}</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/sso_shiny_app.html">sso_shiny_app</a></span><span class="op">(</span><span class="va">auth_config</span>, <span class="va">ui</span>, <span class="va">server</span><span class="op">)</span></span></code></pre></div>
+</div>
 </div>
 <div class="section level2">
 <h2 id="authentication-providers">Authentication providers<a class="anchor" aria-label="anchor" href="#authentication-providers"></a>
