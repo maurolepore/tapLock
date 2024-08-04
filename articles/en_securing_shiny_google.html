@@ -37,13 +37,12 @@
     <li><a class="dropdown-item" href="../articles/es_asegura_shiny_con_google.html">(Español) Asegurando Shiny con Google Auth</a></li>
   </ul>
 </li>
-<li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/maurolepore/tapLock/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/ixpantia/tapLock/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -60,7 +59,7 @@
       <h1>(English) Securing Shiny with Google Auth</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/maurolepore/tapLock/blob/main/vignettes/en_securing_shiny_google.Rmd" class="external-link"><code>vignettes/en_securing_shiny_google.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/ixpantia/tapLock/blob/main/vignettes/en_securing_shiny_google.Rmd" class="external-link"><code>vignettes/en_securing_shiny_google.Rmd</code></a></small>
       <div class="d-none name"><code>en_securing_shiny_google.Rmd</code></div>
     </div>
 
@@ -88,7 +87,7 @@ deployment. - Access to Google Developer Console for OAuth credentials.
 </h2>
 <p>Install tapLock from GitHub using the <code>pak</code> package:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"tapLock"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"ixpantia/taplock"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="step-2-create-google-oauth-credentials">Step 2: Create Google OAuth Credentials<a class="anchor" aria-label="anchor" href="#step-2-create-google-oauth-credentials"></a>
@@ -131,7 +130,7 @@ variables.</p>
 <p>Modify your Shiny app to use <code>sso_shiny_app</code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.posit.co/" class="external-link">shiny</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/maurolepore/tapLock" class="external-link">tapLock</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ixpantia/tapLock" class="external-link">tapLock</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Authentication configuration</span></span>
 <span><span class="va">auth_config</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/new_openid_config.html">new_openid_config</a></span><span class="op">(</span></span>
@@ -183,7 +182,7 @@ security and privacy.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by FIXME.</p>
+  <p>Developed by Andres Quintero.</p>
 </div>
 
 <div class="pkgdown-footer-right">
